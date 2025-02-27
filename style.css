@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text-color: #fcfcf9c0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(2, 2, 67, 0.916);
+    color: #cccccc;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+img {
+    justify-content: center;
+    width: 25%;
+    height: 10%;
+    display: flex;
+    margin: 0% 38%;
+    image-rendering: crisp-edges;
+}
+
+main h1 {
+    color: var(--text-color);
+    font-size: 50px;
+    letter-spacing: -1px;
+    margin-bottom: 75px;
+}
+
+div#wrapper h1 {
+    color: var(--text-color);
+    font-size: 50px;
+    letter-spacing: -1px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+div#wrapper h2 {
+    color: var(--text-color);
+    margin: 450px;
+    margin-top: 50px;
+}
+
+div#wrapper p {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    width: 700px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav ul li {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.cursor {
+    font-weight: 700;
+    animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+
+    50% {
+        color: var(--text-color);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.wb-body {
+    background: #070709;
+    padding: 20px;
+}
+
+main li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 2.5;
+    margin-top: 20px;
+}
+
+/* Responsive Media Queries */
+
+/* Extra Small devices (phones, 480px and down) */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div#wrapper h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    img {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    div#wrapper h1 {
+        font-size: 35px;
+        margin-left: 20px;
+    }
+
+    div#wrapper h2 {
+        margin: 20px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Medium devices (tablets, 601px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container {
+        max-width: 80%;
+    }
+
+    div#wrapper h1 {
+        font-size: 40px;
+        margin-left: 50px;
+    }
+
+    nav {
+        width: 90%;
+    }
+}
+
+/* Large devices (laptops/desktops, 901px and up) */
+@media only screen and (min-width: 901px) {
+    .container {
+        max-width: 600px;
+    }
+
+    div#wrapper h1 {
+        font-size: 50px;
+        margin-left: 200px;
+    }
+}
+
+/* Extra Large Screens (≥1200px) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+
+    div#wrapper h1 {
+        font-size: 55px;
+    }
+}
